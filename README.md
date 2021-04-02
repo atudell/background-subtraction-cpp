@@ -16,13 +16,16 @@ Using either of these two methods will open a new window with the background rem
 As a demonstration of use: 
 BackgroundSubtraction vid("0");
 
-This uses the OpenCV method MOG2
+This uses the OpenCV method MOG2:
+
 vid.removeBackgroundCV("MOG2")
 
-This uses the OpenCV method KNN
+This uses the OpenCV method KNN:
+
 vid.removeBackgroundCV("KNN")
 
-This uses the contour method
+This uses the contour method:
+
 vid.removeBackground( canny_low = 15, canny_high = 150, min_area = 0.0005, max_area = 0.95 )
 
 Note that main.cpp features example use
